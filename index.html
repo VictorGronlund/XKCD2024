@@ -8,19 +8,35 @@
     <script src="js/comic.js"></script>
 </head>
 <body>
-    <header></header>
+    <header>    
+    <div id="topContainer" class="box">
+        Victor's XKCD Clone
+    </div>
+    </header>
     <main>
-        <div id="comic"></div>
-        <div id="comicNav">
-            <ul>
-                <li id="first">First</li>
-                <li id="prev">Prev</li>
-                <li id="random">Random</li>
-                <li id="next">Next</li>
-                <li id="last">Last</li>
+        
+        
+        <div id="middleContainer" class="box">
+
+            <div id="ctitle">data.title</div>
+            <div id="cdate">data.date</div>
+            
+            <ul class="comicNav">
+            <li><a href="javascript:getComic('1')">|&lt;</a></li>
+            <li><a href="javascript:getComic('prev')">&lt; Prev</a></li>            
+            <li><a href="javascript:getComic('random')">Random</a></li>
+            <li><a href="javascript:getComic('next')">&gt; Next</a></li>
+            <li><a href="javascript:getComic('latest')">&gt;|</a></li>
             </ul>
+        
+            <div id="comic">data.img</div>
+            
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div id="bottomContainer" class="box">
+        VICTOR'S PAGE, MATERIAL USED FROM xkcd.com
+        </div>
+    </footer>
 </body>
 </html>
